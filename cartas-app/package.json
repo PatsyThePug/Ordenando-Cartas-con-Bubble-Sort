@@ -1,0 +1,22 @@
+{
+  "name": "cartas-app",
+  "version": "1.0.0",
+  "description": "Una aplicación para generar y clasificar cartas al azar.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "cartas",
+    "aleatorio",
+    "clasificación"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

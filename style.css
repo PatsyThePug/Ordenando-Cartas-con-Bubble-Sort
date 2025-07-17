@@ -1,4 +1,5 @@
 /* Custom styles for the bubble sort visualization */
+
 .card-item {
     background: linear-gradient(135deg, var(--bs-primary), var(--bs-info));
     border: 2px solid var(--bs-border-color);
@@ -11,17 +12,17 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
 }
 
 .card-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card-item::before {
@@ -31,7 +32,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
     pointer-events: none;
 }
 
@@ -51,6 +52,7 @@
     background: linear-gradient(135deg, var(--bs-success), var(--bs-success));
     border-color: var(--bs-success);
     box-shadow: 0 0 15px rgba(25, 135, 84, 0.4);
+    animation: glow 2s ease-in-out;
 }
 
 @keyframes pulse {
@@ -62,6 +64,11 @@
     0%, 100% { transform: rotate(0deg); }
     25% { transform: rotate(5deg); }
     75% { transform: rotate(-5deg); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(25, 135, 84, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(25, 135, 84, 0.8); }
 }
 
 .bubble-log-container {
@@ -143,11 +150,11 @@
         height: 70px;
         font-size: 1rem;
     }
-    
+
     .container {
         padding: 0 10px;
     }
-    
+
     .speed-control {
         flex-direction: column;
         align-items: flex-start;
@@ -177,16 +184,6 @@
 @keyframes spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* Glow effect for sorted cards */
-.card-item.sorted {
-    animation: glow 2s ease-in-out;
-}
-
-@keyframes glow {
-    0%, 100% { box-shadow: 0 0 15px rgba(25, 135, 84, 0.4); }
-    50% { box-shadow: 0 0 25px rgba(25, 135, 84, 0.8); }
 }
 
 /* Statistics panel */
