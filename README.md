@@ -3,11 +3,6 @@
 Este proyecto es una visualización interactiva del algoritmo **Bubble Sort**, usando cartas numeradas estilizadas con una estética elegante, animada y comprensible. Ideal para aprender cómo funciona paso a paso este algoritmo de ordenamiento clásico.
 
 ---
-## ✨ Vista previa
-
-![Vista previa del proyecto](https://raw.githubusercontent.com/PatsyThePug/Ordenando-Cartas-con-Bubble-Sort/main/preview-bubble-sort.png)
-
-
 ## ⚙️ Funcionalidades
 
 - 🎴 Generación aleatoria de cartas
@@ -25,6 +20,10 @@ Este proyecto es una visualización interactiva del algoritmo **Bubble Sort**, u
 - 🌀 Animaciones de tipo *pulse*, *swing* y *glow*
 - 🧾 Log visual con colores según acción (comparación, intercambio, orden final)
 - 📱 Diseño responsive para todos los dispositivos
+
+## ✨ Vista previa
+
+![Vista previa del proyecto](https://raw.githubusercontent.com/PatsyThePug/Ordenando-Cartas-con-Bubble-Sort/main/preview-bubble-sort.png)
 
 > ✨ **Diseño visual por Alejandra Bárcena**
 
